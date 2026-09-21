@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width:640px){
+    header{
+        display: flex;
+        gap: 30px;
+    }
+    .details nav ul{
+        gap: 40px;
+    }
+}
+header{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    background-color:green;
+    text-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+    gap: 500px;
+    height:40px ;
+    z-index:5;
+    position: fixed;
+    width: 100%;
+}
+header div{
+    margin-top: 12px;
+}
+.details nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+.details nav ul li a{
+ color: white;
+ text-decoration: none;
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 12px;
+}
+small{
+    display: flex;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    justify-content: center;
+}
+.container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 19px;
+position: absolute;
+z-index: 1;
+margin-top: 70px;
+}
+.image-details-container{
+    width: 170px;
+    height: 240px;
+    border: black solid 2px;
+   border-radius: 4px;
+   margin-left: 0;
+}
+.image-section img{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    object-fit: cover;
+    
+}
+  
+.image-section{
+    margin-left: 14px;
+    margin-right: 14px;
+    height: 120px;
+    margin-top: 14px;
+    border-radius: 4px;
+    border: black solid 2px;
+}
+.button{
+    margin-top: 48px;
+    margin-left: 28px;
+}
+.price{
+    text-align: center;
+}
+@media screen and (max-width: 360px)  {
+    .product-content {
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    .cart{
+        width: 100%;
+    }
+}
+.cart-item-count{
+    position: absolute;
+    top: 0;
+    right: 60px;
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-quantity{
+    margin-top: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ font-size: 15px;
+ text-align: center;
+}
+.cart-quantity button{
+    padding: 3px 22px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 8px;
+    margin-top: 7px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+select{
+    margin-left: 45px;
+    width: 30px;
+    border: black solid 2px;
+    border-radius: 4px;
+}
+.cart-quantity p{
+    margin-left: 19px;
+}
+.cart{
+position: fixed;
+top: 0;
+right: -100%;
+width: 360px;
+height: 100%;
+background-color: #fff;
+box-shadow: -2px 0px 10px rgba(0,0,0,0.3);
+padding: 65px 20px 40px;
+z-index: 100;
+overflow: auto;
+transition: 0.5s ease;
+}
+.cart.active{
+right: 0;
+}
+.cart-title{
+    text-align: center;
+    font-size: 30px;
+}
+.cart-box{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.cart-box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.cart-detail{
+    display: grid;
+    gap: 8px;
+    margin-right: auto;
+}
+.cart-product-title{
+    font-size: 16px;
+    line-height: 1;
+}
+
+.cart-price{
+    font-weight: 500;
+}
+.cart-quant{
+    display: flex;
+    width: 100px;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+.cart-quant button{
+    background: transparent;
+    width: 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.cart-quant #decrement{
+   color:#999;
+}
+.cart-quant .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    cursor: default;
+}
+.cart-remove{
+    font-size:25px;
+    cursor: pointer;
+}
+.total{
+     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.total-price{
+    margin-left: 10px;
+    font-weight: 600;
+}
+.btn-buy{
+    display: block;
+    padding: 10px 30px;
+    background: #e35f26;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    margin: 20px auto 0;
+    cursor:pointer;
+}
+#cart-close{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 35px;
+    cursor: pointer;
+}

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce-website</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="web-name">
+            <i>D.O => christ</i>
+        </div>
+        <div class="details">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="login.php">register </a></li>
+                    <li><a href="login.php">login</a></li>
+                 <form action="login.">  <li><a href="">logout</a></li> </form>
+                    <li>    <i class="fa-solid fa-file  club" >cart</i>
+                     <span class="cart-item-count"></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="container">      
+   </div>
+   
+   <div class="cart">
+
+    <h2 class="cart-title">Your Cart</h2>
+    <div class="cart-content">
+
+  
+</div>
+    <div class="total">  
+
+        <div class="total-title">Total</div>
+        <div class="total-price"></div>
+    </div>
+    <div class="btn-buy">Buy Now</div>
+    <i class="fa-solid fa-ellipsis-vertical" id="cart-close"></i>
+</div>
+
+
+   <script src="index.js"></script>
+</body>
+
+</html>

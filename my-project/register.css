@@ -1,0 +1,49 @@
+*{
+        border: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    form{
+        background-color:green;
+        width: 40%;
+        padding:10px 10px;
+        border-radius:4px ;
+        height: 75%;
+    }
+    form div{
+        margin-top: 12px;
+    }
+    h2{
+        color:white;
+        font-weight: bold;
+        text-align: center;
+    }
+    input{
+        width: 100%;
+        padding:8px 0px;
+        border-radius: 4px;
+        color: green;
+        border: none;
+    }
+    
+    label{
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+    }
+    #btn{
+        margin-top: 12px;
+    }
+    #btn:hover{
+      transition: all 0.3s ease;
+      transform: translateY(-4px);
+      background-color: greenyellow;
+    }
+    
